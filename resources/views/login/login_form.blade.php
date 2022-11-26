@@ -25,6 +25,11 @@
                 </ul>
             </div>
         @endif
+
+        <x-alert type="danger" :session="session('login_error')" />
+
+        <x-alert type="danger" :session="session('logout')" />
+
         <div class="form-floating">
             <input type="email" class="form-control" id="floatingInput" name="email" placeholder="name@example.com">
             <label for="floatingInput"></label>
